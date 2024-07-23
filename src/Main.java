@@ -24,11 +24,11 @@ public class Main {
         graph.printGraph();
         System.out.println("----------");
 
-        graph1.addEdgeUnDirectional('i','j');
-        graph1.addEdgeUnDirectional('k','i');
-        graph1.addEdgeUnDirectional('m','k');
-        graph1.addEdgeUnDirectional('k','l');
-        graph1.addEdgeUnDirectional('o','n');
+        graph1.addEdgeBidirectional('i','j');
+        graph1.addEdgeBidirectional('k','i');
+        graph1.addEdgeBidirectional('m','k');
+        graph1.addEdgeBidirectional('k','l');
+        graph1.addEdgeBidirectional('o','n');
 
 
 

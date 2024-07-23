@@ -5,39 +5,39 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 
-public class Graph {
+public class Graph_Generic<T> {
 
-    private Map<Character,LinkedList<Character>> vertices;
+    private Map<T,LinkedList<T>> vertices;
 
-    public Graph() {
+    public Graph_Generic() {
         this.vertices = new HashMap<>();
     }
 
-    public void addVertex(Character vertex){
+    public void addVertex(T vertex){
         vertices.putIfAbsent(vertex,new LinkedList<>());
     }
-    public void addEdgeDirectional(Character from,Character  to){
+    public void addEdgeDirectional(T from, T to){
         vertices.putIfAbsent(from,new LinkedList<>());
         vertices.putIfAbsent(to,new LinkedList<>());
         vertices.get(from).add(to);
     }
-    public void addEdgeBidirectional(Character from, Character to){
+    public void addEdgeBidirectional(T from, T to){
         vertices.putIfAbsent(from,new LinkedList<>());
         vertices.putIfAbsent(to,new LinkedList<>());
         vertices.get(from).add(to);
         vertices.get(to).add(from);
     }
     public void printGraph(){
-        for(Map.Entry<Character,LinkedList<Character>> entry : vertices.entrySet()){
+        for(Map.Entry<T,LinkedList<T>> entry : vertices.entrySet()){
             System.out.print("Vertex : " + entry.getKey());
-                for(Character c : entry.getValue()){
+                for(T c : entry.getValue()){
                     System.out.print(" - > " + c);
                 }
             System.out.println();
         }
     }
 
-    public Map<Character, LinkedList<Character>> getVertices() {
+    public Map<T, LinkedList<T>> getVertices() {
         return vertices;
     }
 }
