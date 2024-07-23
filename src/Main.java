@@ -1,3 +1,4 @@
+import algorithms.BreadthFirst;
 import algorithms.DepthFirst;
 import dataStructureImplementations.Graph;
 
@@ -33,7 +34,8 @@ public class Main {
 
         graph1.printGraph();
 
-        System.out.println(DepthFirst.depthFirstHasPathCyclic(graph,'m','j'));
+        System.out.println(DepthFirst.depthFirstHasPathCyclic(graph,'m','l'));
+        System.out.println(BreadthFirst.breadthFirstHasPathCyclic(graph,'m','l'));
 
 
     }
