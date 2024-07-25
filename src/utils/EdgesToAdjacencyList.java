@@ -1,4 +1,4 @@
-package structy;
+package utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class EdgesToAdjacencyList {
 
-    public static Map<String,List<String>> convertToNodes(List<List<String>> edges){
+    public static Map<String,List<String>> convertEdgesToNodes(List<List<String>> edges){
 
         Map<String,List<String>> converted = new HashMap<>();
 
@@ -38,7 +38,7 @@ public class EdgesToAdjacencyList {
                 List.of("z", "v"),
                 List.of("w", "v")
         );
-        Map<String,List<String>> graph = convertToNodes(edges);
+        Map<String,List<String>> graph = convertEdgesToNodes(edges);
         for(Map.Entry<String,List<String>> entry : graph.entrySet()){
             System.out.print( entry.getKey() + " : ");
             for (String s : entry.getValue()){

@@ -1,9 +1,9 @@
-package structy;
+package structy.graph;
 
 
 import java.util.*;
 
-import static structy.EdgesToAdjacencyList.convertToNodes;
+import static utils.EdgesToAdjacencyList.convertEdgesToNodes;
 
 /*
 problem:
@@ -18,7 +18,7 @@ using BreadthSearchFirst algorithm;
 
 public class ShortestPath {
     public static int shortestPath(List<List<String>> edges, String nodeA, String nodeB) {
-        Map<String, List<String>> graph = convertToNodes(edges);
+        Map<String, List<String>> graph = convertEdgesToNodes(edges);
 
         Queue<String> queue = new LinkedList<>();
         Map<String, Integer> distances = new HashMap<>();
