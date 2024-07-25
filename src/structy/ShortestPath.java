@@ -13,7 +13,7 @@ edges in the path, not the number of nodes. If there is no path between A and B,
 that A and B exist as nodes in the graph.
 https://structy.net/problems/shortest-path
 solution:
-using DepthSearchFirst algorithm;
+using BreadthSearchFirst algorithm;
 */
 
 public class ShortestPath {

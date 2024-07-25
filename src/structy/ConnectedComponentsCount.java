@@ -8,7 +8,7 @@ Write a method, connectedComponentsCount, that takes in the adjacency list of an
 The method should return the number of connected components within the graph.
 https://structy.net/problems/connected-components-count
 solution:
-using DepthSearchFirst algorithm;
+using BreadthSearchFirst algorithm;
 */
 
 
