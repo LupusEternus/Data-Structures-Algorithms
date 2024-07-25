@@ -1,4 +1,4 @@
-package structy.trees;
+package structy.binaryTrees;
 
 import utils.Node;
 import java.util.*;

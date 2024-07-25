@@ -1,4 +1,4 @@
-package structy.graph;
+package structy.binaryTrees;
 
 import utils.Node;
 
