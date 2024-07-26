@@ -1,6 +1,9 @@
 import algorithms.BreadthFirst;
 import algorithms.DepthFirst;
 import dataStructureImplementations.Graph;
+import sortingAlgo.QuickSort;
+
+import static utils.MyUtils.print;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,7 +40,12 @@ public class Main {
         System.out.println(DepthFirst.depthFirstHasPathCyclic(graph,'m','l'));
         System.out.println(BreadthFirst.breadthFirstHasPathCyclic(graph,'m','l'));
 
+        int[] arr = {1,34,5,2,6,73,33,0,13};
 
+        print(arr);
+        QuickSort.quickSort(arr,0, arr.length-1);
+        System.out.println();
+        print(arr);
     }
 
 }
