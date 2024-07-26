@@ -6,13 +6,6 @@ public class SelectionSort {
 
     //Quadratic time O(n^2)
 
-    public static void main(String[] args) {
-
-        print(unsortedArray);
-        int[] sortedArray = selectionSort(unsortedArray);
-        print(sortedArray);
-
-    }
 
     private static int[] selectionSort(int[] array) {
 

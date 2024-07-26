@@ -6,16 +6,6 @@ public class BubbleSort {
 
     //Quadratic time O(n^2)
 
-    public static void main(String[] args) {
-
-
-        print(unsortedArray);
-        int[] sortedArray = bubbleSort(unsortedArray);
-        print(sortedArray);
-
-    }
-
-
     private static int[] bubbleSort(int[] array) {
 
         int size = array.length-1;

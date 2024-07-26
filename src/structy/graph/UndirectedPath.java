@@ -14,8 +14,6 @@ https://structy.net/problems/undirected-path
 
 public class UndirectedPath {
 
-
-
     public static boolean undirectedPath(List<List<String>> edges, String nodeA, String nodeB) {
         Map<String,List<String>> nodes = convertEdgesToNodes(edges);
 

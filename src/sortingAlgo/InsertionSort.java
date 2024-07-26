@@ -7,13 +7,6 @@ public class InsertionSort {
 
     //Quadratic time O(n^2)
 
-    public static void main(String[] args) {
-
-        print(unsortedArray);
-        int[] sorted = insertionSort(unsortedArray);
-        print(sorted);
-
-    }
 
     private static int[] insertionSort(int[] array) {
 

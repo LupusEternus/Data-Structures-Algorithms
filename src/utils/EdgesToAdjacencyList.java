@@ -11,23 +11,17 @@ public class EdgesToAdjacencyList {
 
         Map<String,List<String>> converted = new HashMap<>();
 
-
         for(List<String> edge : edges){
             String node1 = edge.get(0);
             String node2 = edge.get(1);
-
 
             converted.putIfAbsent(node1,new ArrayList<>());
             converted.get(node1).add(node2);
             converted.putIfAbsent(node2,new ArrayList<>());
             converted.get(node2).add(node1);
-
         }
-
         return converted;
     }
-
-
 
     public static void main(String[] args) {
 
@@ -47,6 +41,4 @@ public class EdgesToAdjacencyList {
             System.out.println();
         }
     }
-
-
 }
