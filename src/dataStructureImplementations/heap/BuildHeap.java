@@ -43,8 +43,6 @@ public class BuildHeap {
         System.out.println();
         print(arr);
     }
-
-
 }
 
 
