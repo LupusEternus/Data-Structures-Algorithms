@@ -1,4 +1,4 @@
-package utils;
+package dataStructureImplementations.graph;
 
 public class Node<T> {
     public T val;

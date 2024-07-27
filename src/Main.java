@@ -1,6 +1,6 @@
 import algorithms.BreadthFirst;
 import algorithms.DepthFirst;
-import dataStructureImplementations.Graph;
+import dataStructureImplementations.graph.Graph;
 import sortingAlgo.QuickSort;
 
 import static utils.MyUtils.print;

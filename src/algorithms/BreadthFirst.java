@@ -1,6 +1,6 @@
 package algorithms;
 
-import dataStructureImplementations.Graph;
+import dataStructureImplementations.graph.Graph;
 
 import java.util.HashSet;
 import java.util.LinkedList;

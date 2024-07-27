@@ -1,6 +1,6 @@
 package structy.binaryTrees;
 
-import utils.Node;
+import dataStructureImplementations.graph.Node;
 
 import java.util.*;
 
