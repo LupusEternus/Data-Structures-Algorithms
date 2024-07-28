@@ -2,7 +2,7 @@ package dataStructureImplementations.heap;
 
 import static utils.MyUtils.print;
 
-public class BuildHeap {
+public class BuildMaxHeap {
 
 
     public static void buildMaxHeap(int[] array){
@@ -10,28 +10,29 @@ public class BuildHeap {
         int internalNodesRange = (array.length/2) - 1;
 
         for(int i = internalNodesRange ; i >= 0; i--){
-            heapify(array,i);
+            heapify(array,i,array.length);
         }
     }
 
-    private static void heapify(int[] array, int i) {
+    // 0(log n))
+    private static void heapify(int[] array, int i, int size) {
 
-        int heapSize = array.length;
+
         int indexLchild = (2 * i) + 1;
         int indexRchild = (2 * i) + 2;
         int largest = i;
 
-        if(indexLchild < heapSize && array[indexLchild] > array[largest]){
+        if(indexLchild < size && array[indexLchild] > array[largest]){
             largest = indexLchild;
         }
-        if(indexRchild < heapSize && array[indexRchild] > array[largest]){
+        if(indexRchild < size && array[indexRchild] > array[largest]){
             largest = indexRchild;
         }
         if(largest != i){
             int temp = array[i];
             array[i] = array[largest];
             array[largest] = temp;
-            heapify(array,largest);
+            heapify(array,largest,size);
         }
     }
 
