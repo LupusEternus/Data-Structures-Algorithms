@@ -2,6 +2,7 @@ package dataStructureImplementations.heap;
 
 import static utils.MyUtils.print;
 
+@SuppressWarnings("DuplicatedCode")
 public class BuildMaxHeap {
 
 
