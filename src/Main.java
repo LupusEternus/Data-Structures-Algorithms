@@ -1,14 +1,17 @@
 import algorithms.BreadthFirst;
 import algorithms.DepthFirst;
+import dataStructureImplementations.MyHashMap;
 import dataStructureImplementations.graph.Graph;
 import sortingAlgo.QuickSort;
+
+import java.util.Map;
 
 import static utils.MyUtils.print;
 
 public class Main {
     public static void main(String[] args) {
 
-
+    /*
         Graph graph = new Graph();
         Graph graph1 = new Graph();
 
@@ -46,6 +49,27 @@ public class Main {
         QuickSort.quickSort(arr,0, arr.length-1);
         System.out.println();
         print(arr);
+
+     */
+
+        MyHashMap<String, Integer> myHashMap = new MyHashMap<>();
+        myHashMap.put("A", 12);
+        myHashMap.put("E", 14);
+        myHashMap.put("H", 54);
+        myHashMap.put("P", 44);
+        myHashMap.put("G", 66);
+        myHashMap.put("X", 453);
+        myHashMap.put("V", 6);
+        myHashMap.put("B", 6436);
+        myHashMap.put("N", 3);
+        myHashMap.put("O", 3);
+
+        System.out.println(myHashMap);
+        //System.out.println(myHashMap.get("A"));
+        //System.out.println(myHashMap.remove("A"));
+        myHashMap.remove("X");
+        System.out.println(myHashMap);
+
     }
 
 }
